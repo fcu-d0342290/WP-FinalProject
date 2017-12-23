@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>偏鄉大躍進</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/topButton.css">
+    <style>
+        #map {
+            height: 100%;
+            width: auto;
+            max-height: 500px;
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <a id="top"></a>
+    <div class="jumbotron text-center" style="height:190px;">
+        <form action="result.html" align="center">
+            <a href="homePage.html">
+                <img src="../images/title.png" style="position:absolute;left:0px;top:0px;height: auto;max-width: 100%;margin: auto;max-height: 200px;">
+            </a>
+            <a href="register.html" style="position:absolute;right:25px;top:30px">帳號登入</a>
+            <br>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="search_target"> &nbsp;&nbsp;
+            <input type="submit" value="  搜尋  ">
+            <br>
+            <br>
+            <a class="button" href="newInformation.html">最新資訊</a>
+            <a class="button" href="#">活動公告</a>
+            <a class="button" href="uploadArticle.html">上傳文章</a>
+            <a class="button" href="contactUs.html">聯絡我們</a>
+        </form>
+    </div>
+
+    <a href="#Top">
+    </a>
+
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var fcu = { lat: 24.179411, lng: 120.646562 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: fcu
+            });
+            var marker = new google.maps.Marker({
+                position: fcu,
+                map: map,
+                title: "FCU 逢甲大學"
+            });
+
+            marker.addListener('mouseover', function () {
+                map.setCenter(marker.getPosition());
+            });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: "我在這邊~"
+              });
+      
+              marker.addListener('click', function() {
+                infowindow.open(map, marker);
+              });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPXJPhbG6aP_MQ5wf-2CH2k2LoODjZ7pI&callback=initMap">
+    </script>
+</body>
+
+</html>

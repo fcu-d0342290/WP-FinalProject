@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>偏鄉大躍進</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/topButton.css">
+
+	<style>
+		img {
+			height: auto;
+			max-width: 100%;
+			margin: auto;
+			max-height: 200px;
+		}
+
+		#NewImformation {
+			background-color: #db5e5e;
+			position: relative;
+		}
+
+
+
+		.slideContainer img {
+			max-height: 250px;
+			width: 87%;
+			margin: auto;
+
+		}
+
+		html,
+		body {
+			overflow-x: hidden
+		}
+
+		.article {
+			height: auto;
+			max-width: 100%;
+		}
+	</style>
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/slick.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<a id="top"></a>
+	<div class="jumbotron text-center" style="height:190px;">
+		<form action="result.html" align="center">
+			<a href="homePage.html">
+				<img src="../images/title.png" style="position:absolute;left:0px;top:0px">
+			</a>
+			<a href="register.html" style="position:absolute;right:25px;top:30px">帳號登入</a>
+			<br>
+			<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" name="search_target"> &nbsp;&nbsp;
+			<input type="submit" value="  搜尋  ">
+			<br>
+			<br>
+			<a class="button" href="newInformation.html">最新資訊</a>
+			<a class="button" href="#">活動公告</a>
+			<a class="button" href="uploadArticle.html">上傳文章</a>
+			<a class="button" href="contactUs.html">聯絡我們</a>
+		</form>
+	</div>
+
+	<section class="slideContainer slider">
+		<div>
+			<img src="../images/1.jpg">
+		</div>
+		<div>
+			<img src="../images/2.jpg">
+		</div>
+		<div>
+			<img src="../images/3.jpg">
+		</div>
+	</section>
+
+	<script src="../js/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function () {
+			$(".slideContainer").slick({
+				dots: true,         /* 下面圖片數(黑點) */
+				lazyLoad: 'ondemand', // ondemand progressive anticipated
+				infinite: true,
+				autoplay: true,      /* 自動播放 */
+				autoplaySpeed: 2500  /* 輪播速度 */
+			});
+		});
+	</script>
+
+
+	<div class="container">
+		<div class="row">
+			<div id=NewImformation class="col-sm-8">
+				<font face="標楷體" color="white" size="6">最新資訊</font>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4" style="background-color:#e3e4e6">
+				<div class="article">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="article.html">
+						<img src="http://www.tomorrowschool.org/assets/images/sub/img_06.jpg">
+					</a>
+					<p>　　小校的教師原配額就少，加上交通的不便，使得老師到市區參加培訓的便利性較低，往往需要更多資源的進入，幫助這些有需要的小校辦理師資培訓。 永齡・鴻海台灣希望小學行動車前進偏鄉服務計畫，今年已經在中彰投地區開辦，這是我們的第一個階段，未來落點服務...............................
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-4" style="background-color:#e3e4e6">
+
+				<div class="article">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="https://health.gvm.com.tw/webonly_content_15322.html">
+						<img src="https://img.gvm.com.tw/2017/0_170609141149.jpg">
+					</a>
+					<p>　　長期待在偏鄉的王政忠，看見資源不足的學生學習上的困難，獨創了MAPS教學法，一切都是為了讓學生學會學習，而這種對大多數學生有用的方法，他很樂意跟更多老師分享。 台灣這幾年熱血教師自主性的教學研習會，發展得風風火火，想示範自己教學法的老師開班分享..............................
+
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<font face="標楷體" size="6" color="#81D8D0">相關網站 </font>
+				<br>
+				<br>
+				<a href="http://remoteelearning.blogspot.tw/">數位學習偏鄉教育創新發展輔導部落</a>
+				<br>
+				<br>
+				<a href="http://oripms.kh.edu.tw/">國際扶輪偏鄉數位關懷教育平台</a>
+				<br>
+				<br>
+				<a href="http://www.tomorrowschool.org/village">永齡 ‧ 鴻海 台灣希望小學</a>
+				<br>
+				<br>
+				<a href="http://kuentai.org.tw/happiness2016/">幸福偏鄉 心願認養</a>
+				<br>
+				<br>
+				<a href="http://link.ruraledu.tw/home.php">偏鄉教育創新發展方案</a>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div id=NewImformation class="col-sm-8">
+				<font face="標楷體" color="white" size="6">活動公告</font>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4" style="background-color:#e3e4e6">
+				<div class="article">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="article.html">
+						<img src="http://www.tomorrowschool.org/assets/images/sub/img_06.jpg">
+					</a>
+					<p>　　小校的教師原配額就少，加上交通的不便，使得老師到市區參加培訓的便利性較低，往往需要更多資源的進入，幫助這些有需要的小校辦理師資培訓。 永齡・鴻海台灣希望小學行動車前進偏鄉服務計畫，今年已經在中彰投地區開辦，這是我們的第一個階段，未來落點服務...............................
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-4" style="background-color:#e3e4e6">
+
+				<div class="article">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="https://health.gvm.com.tw/webonly_content_15322.html">
+						<img src="https://img.gvm.com.tw/2017/0_170609141149.jpg">
+					</a>
+					<p>　　長期待在偏鄉的王政忠，看見資源不足的學生學習上的困難，獨創了MAPS教學法，一切都是為了讓學生學會學習，而這種對大多數學生有用的方法，他很樂意跟更多老師分享。 台灣這幾年熱血教師自主性的教學研習會，發展得風風火火，想示範自己教學法的老師開班分享..............................
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#Top">
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	</a>
+</body>
+
+</html>
