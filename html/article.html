@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/slick.css">
 	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/topButton.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<style>
 		img {
 			height: auto;
@@ -21,14 +22,12 @@
 			font-size: 1.2em;
 		}
 
-		@media only screen and (max-width: 320px) {
-
-			body {
-				font-size: 2em;
-			}
-
+		video {
+			width: 100%;
+			height: auto;
 		}
 	</style>
+	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
@@ -37,7 +36,7 @@
 	<div class="jumbotron text-center" style="height:190px;">
 		<form action="result.html" align="center">
 			<a href="homePage.html">
-				<img src="../images/title.png" style="position:absolute;left:0px;top:0px">
+				<img src="../img/title.png" style="position:absolute;left:0px;top:0px">
 			</a>
 			<a href="register.html" style="position:absolute;right:25px;top:30px">帳號登入</a>
 			<br>
@@ -54,7 +53,7 @@
 	</div>
 
 	<div class="" style="margin:auto;" align="center">
-		<font face="標楷體" color="#3edd95" style="font-size: 4.8vmin;">偏鄉駐點計畫 & 行動車前進偏鄉計畫</font>
+		<font face="標楷體" style="font-size: 4.8vmin;color:rgb(25, 211, 152)">偏鄉駐點計畫 & 行動車前進偏鄉計畫</font>
 	</div>
 	<br>
 	<div class="container">
@@ -72,17 +71,39 @@
 	</div>
 	<div class="container">
 		<div class="row">
-				<div class="col-sm-2 col-md-2">
-				</div>
+			<div class="col-sm-2 col-md-2">
+			</div>
 			<div class="col-sm-8 col-md-8">
 				<p>
 					<br>　　行動車的服務範圍不只在學校，我們認為行動車也有走入社區的必要。社區當中原本就有一些民間單位及社福團體在運行課後照顧與輔導的據點，許多老師及 志工都是照顧學童的重要人物。藉由行動車的進入，我們期許永齡的教材可以成為社區照顧與輔導的重要資源，再加上使用教材前給予專業的師資培訓課程，
 					使得課後的照顧能發揮最大的功效。加上偏鄉駐點計畫，將偏鄉專任永齡教材師資進行社區駐點服務，支持並網絡社區與民間團體的教育與社會支持，進行教 育平等與普及之宗旨。
 				</p>
+
+
+				<!--  facebook like -->
+				<div id="fb-root"></div>
+				<script>(function (d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.11';
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-like" data-href="http://www.iecs.fcu.edu.tw/wSite/mp?mp=370201" data-layout="button" data-action="like" data-size="small"
+				 data-show-faces="true" data-share="true"></div>
+
+				<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.iecs.fcu.edu.tw%2FwSite%2Fmp%3Fmp%3D370201&width=80&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId"
+				 width="80" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
 		</div>
 	</div>
 
+	<div class="col-sm-3 col-md-3">
+	</div>
+	<div class="col-sm-6 col-md-6">
+		<video src="../video/test.mp4" controls width="360" height="270"></video>
+	</div>
 
 
 	</div>

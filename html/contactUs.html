@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../css/slick.css">
     <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="../css/topButton.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <style>
         #map {
             height: 100%;
@@ -15,6 +16,11 @@
             max-height: 500px;
             max-width: 800px;
             margin: auto;
+        }
+
+        font{
+            font-size: 6.8vmin;
+            color: #91763b;
         }
     </style>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,10 +30,10 @@
 
 <body>
     <a id="top"></a>
-    <div class="jumbotron text-center" style="height:190px;">
+    <div class="jumbotron text-center topFrame;">
         <form action="result.html" align="center">
             <a href="homePage.html">
-                <img src="../images/title.png" style="position:absolute;left:0px;top:0px;height: auto;max-width: 100%;margin: auto;max-height: 200px;">
+                <img src="../img/title.png" style="position:absolute;left:0px;top:0px;height: auto;max-width: 100%;margin: auto;max-height: 200px;">
             </a>
             <a href="register.html" style="position:absolute;right:25px;top:30px">帳號登入</a>
             <br>
@@ -45,7 +51,9 @@
 
     <a href="#Top">
     </a>
-
+    <div class="" style="margin:auto;" align="center">
+        <font face="標楷體" style="font-size: 6.8vmin;">地圖位置</font>
+    </div>
     <div id="map"></div>
     <script>
         function initMap() {
@@ -66,14 +74,25 @@
 
             var infowindow = new google.maps.InfoWindow({
                 content: "我在這邊~"
-              });
-      
-              marker.addListener('click', function() {
+            });
+
+            marker.addListener('click', function () {
                 infowindow.open(map, marker);
-              });
+            });
         }
 
     </script>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 col-md-2">
+            </div>
+            <div class="col-sm-10 col-md-10" style="margin:auto;">
+                <font face="標楷體" style="font-size: 3.8vmin;">聯絡地址 : 台中市西屯區文華路100號
+                    <br>聯絡電話 : (04)2451-7250</font>
+            </div>
+        </div>
+    </div>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPXJPhbG6aP_MQ5wf-2CH2k2LoODjZ7pI&callback=initMap">
     </script>
 </body>
