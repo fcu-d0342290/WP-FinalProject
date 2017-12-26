@@ -8,14 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/slick.css">
 	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<style>
-		img {
-			height: auto;
-			max-width: 100%;
-			margin: auto;
-			max-height: 200px;
-		}
-	</style>
+
+	<script src="../js/confirmPassword.js"></script>
 </head>
 
 <body>
@@ -30,7 +24,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<form action="register.html" align="center">
+				<form action="register.html" name="form1" align="center">
 
 					<br> 暱稱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<input type="text" name="name">
@@ -47,13 +41,13 @@
 					<br> 電子信箱
 					<input type="text" name="email">
 					<br>
-					<br> 性別　　&nbsp;&nbsp;&nbsp;
-					<input type="radio" name="sex" value="Man">男性
-					<input type="radio" name="sex" value="Woman">女性
-					<input type="radio" name="sex" value="Others">其他
+					<br> 性別&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex" value="Man">男性&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex" value="Woman">女性&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex" value="Others">其他&nbsp;&nbsp;&nbsp;&nbsp;
 					<br>
 					<br>
-					<input type="submit" value="Submit">
+					<input type="submit" onClick="return check()"value="Submit">
 				</form>
 			</div>
 		</div>

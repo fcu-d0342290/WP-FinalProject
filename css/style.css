@@ -22,3 +22,31 @@ body {
     max-height: 420px;
     overflow: hidden;
 }
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    max-height: 200px;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
+#NewImformation {
+    background-color: #db5e5e;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: auto;
+    max-height: 500px;
+    max-width: 800px;
+    margin: auto;
+}
