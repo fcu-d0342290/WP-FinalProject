@@ -39,8 +39,14 @@ video {
 }
 
 #NewImformation {
-    background-color: #db5e5e;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed5364+0,ed5364+24,ed5364+51,ed939d+65,d24b5a+84,d24b5a+84,f18e99+100 */
+    background: rgb(237,83,100); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(237,83,100,1) 0%, rgba(237,83,100,1) 24%, rgba(237,83,100,1) 51%, rgba(237,147,157,1) 65%, rgba(210,75,90,1) 84%, rgba(210,75,90,1) 84%, rgba(241,142,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(237,83,100,1) 0%,rgba(237,83,100,1) 24%,rgba(237,83,100,1) 51%,rgba(237,147,157,1) 65%,rgba(210,75,90,1) 84%,rgba(210,75,90,1) 84%,rgba(241,142,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(237,83,100,1) 0%,rgba(237,83,100,1) 24%,rgba(237,83,100,1) 51%,rgba(237,147,157,1) 65%,rgba(210,75,90,1) 84%,rgba(210,75,90,1) 84%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed5364', endColorstr='#f18e99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     position: relative;
+    border-radius:10px
 }
 
 #map {
